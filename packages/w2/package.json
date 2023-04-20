@@ -1,0 +1,11 @@
+{
+  "name": "w2",
+  "packageManager": "yarn@3.5.0",
+  "dependencies": {
+    "w1": "*"
+  },
+  "scripts": {
+    "test": "echo TEST",
+    "start": "node ./index.js"
+  }
+}

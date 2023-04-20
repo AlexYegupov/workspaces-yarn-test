@@ -1,0 +1,11 @@
+{
+  "name": "33434",
+  "packageManager": "yarn@3.5.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "w1",
+  "packageManager": "yarn@3.5.0",
+  "dependencies": {
+    "pug": "^3.0.2",
+    "react": "^18.2.0"
+  }
+}
