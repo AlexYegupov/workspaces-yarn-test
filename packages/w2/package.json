@@ -2,7 +2,7 @@
   "name": "w2",
   "packageManager": "yarn@3.5.0",
   "dependencies": {
-    "w1": "*"
+    "w1": "workspace:*"
   },
   "scripts": {
     "test": "echo TEST",

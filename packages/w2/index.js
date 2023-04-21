@@ -1,4 +1,4 @@
-const w1 = require('../w1')
+const w1 = require('w1')
 
 
 const exp = {
@@ -10,4 +10,3 @@ console.log(exp)
 
 
 module.exports = exp
-

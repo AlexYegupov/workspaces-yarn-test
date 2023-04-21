@@ -528,13 +528,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["w1", [\
-        ["npm:1.0.0", {\
-          "packageLocation": "./.yarn/cache/w1-npm-1.0.0-49907d5874-e420f3c93c.zip/node_modules/w1/",\
-          "packageDependencies": [\
-            ["w1", "npm:1.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["workspace:packages/w1", {\
           "packageLocation": "./packages/w1/",\
           "packageDependencies": [\
@@ -550,7 +543,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/w2/",\
           "packageDependencies": [\
             ["w2", "workspace:packages/w2"],\
-            ["w1", "npm:1.0.0"]\
+            ["w1", "workspace:packages/w1"]\
           ],\
           "linkType": "SOFT"\
         }]\

@@ -440,14 +440,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"w1@npm:*":
-  version: 1.0.0
-  resolution: "w1@npm:1.0.0"
-  checksum: e420f3c93c559b39b4214a0a613c449a237447596afe68d3740e737145a499a7cdec5691f2e352d3f0d1e67af9ba62921389f71e16be4d875093249cc1a4a5ad
-  languageName: node
-  linkType: hard
-
-"w1@workspace:packages/w1":
+"w1@workspace:*, w1@workspace:packages/w1":
   version: 0.0.0-use.local
   resolution: "w1@workspace:packages/w1"
   dependencies:
@@ -460,7 +453,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "w2@workspace:packages/w2"
   dependencies:
-    w1: "*"
+    w1: "workspace:*"
   languageName: unknown
   linkType: soft
 
