@@ -16,6 +16,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
+        "name": "server",\
+        "reference": "workspace:packages/server"\
+      },\
+      {\
         "name": "w1",\
         "reference": "workspace:packages/w1"\
       },\
@@ -28,6 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["33434", ["workspace:."]],\
+      ["server", ["workspace:packages/server"]],\
       ["w1", ["workspace:packages/w1"]],\
       ["w2", ["workspace:packages/w2"]]\
     ],\
@@ -489,6 +494,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["supports-preserve-symlinks-flag", "npm:1.0.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["server", [\
+        ["workspace:packages/server", {\
+          "packageLocation": "./packages/server/",\
+          "packageDependencies": [\
+            ["server", "workspace:packages/server"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["supports-preserve-symlinks-flag", [\
